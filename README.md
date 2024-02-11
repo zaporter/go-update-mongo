@@ -20,7 +20,7 @@ The goal of this is to allow applications to perform complex operations on their
 
 [$setOnInsert](https://www.mongodb.com/docs/manual/reference/operator/update/setOnInsert/) partially works, however it is untested because I have a hard time determining exactly what the correct behavior should be here (because we are always performing an upsert action)
 
-[$pull with query](https://www.mongodb.com/docs/manual/reference/operator/update/pull/). Pull works on basic operations but it fails if you try to pull all documents that match a query.
+[$pull with condition](https://www.mongodb.com/docs/manual/reference/operator/update/pull/). Pull works on basic operations but it fails if you try to pull all documents that match a condition.
 
 # Testing Methodology
 
