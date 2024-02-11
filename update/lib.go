@@ -26,14 +26,16 @@ func UpdateDocument(document, updateDoc bson.D) (bson.D, error) {
 	if err != nil {
 		return nil, err
 	}
+	if err := doc.ValidateData(); err != nil {
+		return nil, errors.Wrap(err, "validating document")
+	}
 	convertedUpdates, err := convertUpdateParams(updateDoc)
 	if err != nil {
 		return nil, errors.Wrap(err, "convert update operations to update params")
 	}
 	for _, update := range convertedUpdates {
 		// from ferret/handler/msg_update.go
-		_, err := common.HasSupportedUpdateModifiers("update", update.Update)
-		if err != nil {
+		if _, err := common.HasSupportedUpdateModifiers("update", update.Update); err != nil {
 			return nil, err
 		}
 
@@ -68,7 +70,6 @@ func convertDToDocument(d bson.D) (*types.Document, error) {
 	}
 
 	doc, err := rawDoc.Convert()
-	// todo: doc.validatedata?
 	return doc, errors.Wrap(err, "converting to parsed bson")
 }
 
@@ -93,7 +94,7 @@ func convertUpdateParams(updates bson.D) ([]common.Update, error) {
 	commonUpdates := make([]common.Update, 0, len(updates))
 	// Hardcoded to a single update for now.
 	// Something is fishy between the ferret and mongo-go-driver types
-	// I think I am missing something
+	// I suspect I am missing something
 	for _, update := range []bson.D{updates} {
 		updateDocument, err := convertDToDocument(update)
 		if err != nil {
