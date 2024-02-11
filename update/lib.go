@@ -9,15 +9,24 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 )
 
-func UpdateDocument(document, updates bson.D) (bson.D, error) {
-	if len(updates) == 0 {
+// UpdateDocument updates the provided bson.D document using the passed updateDoc.
+// it returns that new document.
+//
+// The passed updateDoc must conform to the mongodb Update Operator spec
+// https://www.mongodb.com/docs/manual/reference/operator/update/
+//
+// Under the hood, this uses FerretDB to update the document.
+//
+//nolint:revive
+func UpdateDocument(document, updateDoc bson.D) (bson.D, error) {
+	if len(updateDoc) == 0 {
 		return nil, errors.New("update document must have at least one element")
 	}
 	doc, err := convertDToDocument(document)
 	if err != nil {
 		return nil, err
 	}
-	convertedUpdates, err := convertUpdateParams(updates)
+	convertedUpdates, err := convertUpdateParams(updateDoc)
 	if err != nil {
 		return nil, errors.Wrap(err, "convert update operations to update params")
 	}

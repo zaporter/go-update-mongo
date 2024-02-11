@@ -158,7 +158,7 @@ func TestBehaviorParity(t *testing.T) {
 		//		"$currentDate": mapT{"field": true},
 		//	},
 		//	skip: true,
-		//},
+		// },
 		//{
 		//	name:   "currentDate true",
 		//	object: bson.D{{"field", 1}},
@@ -166,7 +166,7 @@ func TestBehaviorParity(t *testing.T) {
 		//		"$currentDate": mapT{"field": true},
 		//	},
 		//	skip: true,
-		//},
+		// },
 		//{
 		//	name:   "currentDate nested set",
 		//	object: bson.D{{"field", 1}},
@@ -174,7 +174,7 @@ func TestBehaviorParity(t *testing.T) {
 		//		"$currentDate": mapT{"unknown.bar": true},
 		//	},
 		//	skip: true,
-		//},
+		// },
 		//{
 		//	name:   "currentDate document timestamp",
 		//	object: bson.D{{"field", 1}},
@@ -182,7 +182,7 @@ func TestBehaviorParity(t *testing.T) {
 		//		"$currentDate": mapT{"field": mapT{"$type": "timestamp"}},
 		//	},
 		//	skip: true,
-		//},
+		// },
 		//{
 		//	name:   "currentDate document date",
 		//	object: bson.D{{"field", 1}},
@@ -190,7 +190,7 @@ func TestBehaviorParity(t *testing.T) {
 		//		"$currentDate": mapT{"field": mapT{"$type": "date"}},
 		//	},
 		//	skip: true,
-		//},
+		// },
 		//{
 		//	name:   "currentDate document anything else",
 		//	object: bson.D{{"field", 1}},
@@ -324,7 +324,6 @@ func TestBehaviorParity(t *testing.T) {
 			name:   "max on array field",
 			object: objT{{"values", primitive.A{10, 20, 30}}},
 			update: upT{{"$max", mapT{"values": 40}}},
-
 		},
 		{
 			name:   "max on empty document",
@@ -1501,7 +1500,7 @@ func TestBehaviorParity(t *testing.T) {
 			tcObjectWithID := bson.D{{Key: "_id", Value: uuid.New().String()}}
 			tcObjectWithID = append(tcObjectWithID, tc.object...)
 			// perform operation in mongo
-			mongoResult, mongoErr := performMongoUpdate(t, ctx, col, tcObjectWithID, tc.update)
+			mongoResult, mongoErr := performMongoUpdate(ctx, t, col, tcObjectWithID, tc.update)
 			// perform my in-memory operation
 			myResult, myError := self.UpdateDocument(tcObjectWithID, tc.update)
 
@@ -1531,8 +1530,7 @@ func TestBehaviorParity(t *testing.T) {
 	}
 }
 
-func performMongoUpdate(t *testing.T,
-	ctx context.Context,
+func performMongoUpdate(ctx context.Context, t *testing.T,
 	col *mongo.Collection,
 	object bson.D,
 	update bson.D,

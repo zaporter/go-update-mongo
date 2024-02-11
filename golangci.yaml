@@ -83,6 +83,7 @@ issues:
         - exhaustive
         - goconst
         - gosec
+        - lll # line length is fine
     - path: /doc.go$
       linters:
         - lll
