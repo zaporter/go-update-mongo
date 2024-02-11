@@ -52,7 +52,7 @@ func TestBehaviorParity(t *testing.T) {
 			update:           map[string]interface{}{},
 			shouldContainErr: "update document must have at least one element",
 		},
-        // ---------------------- Field Operators -----------------------------
+		// ---------------------- Field Operators -----------------------------
 		//
 		// $set
 		//
@@ -398,7 +398,7 @@ func TestBehaviorParity(t *testing.T) {
 			},
 			skip: true,
 		},
-        // ---------------------- Bitwise Operators -----------------------------
+		// ---------------------- Bitwise Operators -----------------------------
 		//
 		// $bit
 		//
@@ -427,7 +427,10 @@ func TestBehaviorParity(t *testing.T) {
 			},
 			skip: true,
 		},
-        // ---------------------- Array Operators -----------------------------
+		// ---------------------- Array Operators -----------------------------
+		//
+		// $
+		//
 	}
 	ctx := context.Background()
 	client := ConnectToTestMongo(t)
