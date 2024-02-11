@@ -1,0 +1,26 @@
+mode: atomic
+github.com/zaporter-work/go-update-mongo/update/lib.go:17.85,18.25 1 7
+github.com/zaporter-work/go-update-mongo/update/lib.go:18.25,20.3 1 1
+github.com/zaporter-work/go-update-mongo/update/lib.go:21.2,22.30 2 6
+github.com/zaporter-work/go-update-mongo/update/lib.go:22.30,24.17 2 6
+github.com/zaporter-work/go-update-mongo/update/lib.go:24.17,26.4 1 0
+github.com/zaporter-work/go-update-mongo/update/lib.go:27.3,27.30 1 6
+github.com/zaporter-work/go-update-mongo/update/lib.go:29.2,31.29 3 6
+github.com/zaporter-work/go-update-mongo/update/lib.go:31.29,33.17 2 6
+github.com/zaporter-work/go-update-mongo/update/lib.go:33.17,35.4 1 0
+github.com/zaporter-work/go-update-mongo/update/lib.go:37.2,37.20 1 6
+github.com/zaporter-work/go-update-mongo/update/lib.go:40.70,41.11 1 6
+github.com/zaporter-work/go-update-mongo/update/lib.go:42.14,43.19 1 6
+github.com/zaporter-work/go-update-mongo/update/lib.go:44.10,45.33 1 0
+github.com/zaporter-work/go-update-mongo/update/lib.go:54.53,56.9 2 6
+github.com/zaporter-work/go-update-mongo/update/lib.go:56.9,58.3 1 0
+github.com/zaporter-work/go-update-mongo/update/lib.go:59.2,61.8 1 6
+github.com/zaporter-work/go-update-mongo/update/lib.go:63.62,66.26 2 6
+github.com/zaporter-work/go-update-mongo/update/lib.go:66.26,68.3 1 7
+github.com/zaporter-work/go-update-mongo/update/lib.go:69.2,70.28 2 6
+github.com/zaporter-work/go-update-mongo/update/lib.go:70.28,72.9 2 10
+github.com/zaporter-work/go-update-mongo/update/lib.go:72.9,75.4 2 4
+github.com/zaporter-work/go-update-mongo/update/lib.go:75.9,77.4 1 6
+github.com/zaporter-work/go-update-mongo/update/lib.go:79.2,79.35 1 6
+github.com/zaporter-work/go-update-mongo/update/lib.go:79.35,81.3 1 3
+github.com/zaporter-work/go-update-mongo/update/lib.go:82.2,82.20 1 6
