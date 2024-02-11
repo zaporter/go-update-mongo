@@ -1,84 +1,109 @@
 package update
 
 import (
-	"errors"
-
+	"github.com/pkg/errors"
+	"github.com/zaporter-work/go-update-mongo/internal/ferret/bson2"
+	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/common"
+	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
 	"go.mongodb.org/mongo-driver/bson"
 )
 
 type Document = bson.D
-type UpdateOperation = map[string]interface{}
-type upT = map[string]interface{}
+type UpdateOperation = []bson.D
+type upT = map[string]any
 
-type updateStep interface {
-	apply(current bson.D) (bson.D, error)
-}
-
-func UpdateDocument(document Document, operation UpdateOperation) (Document, error) {
-	if len(operation) == 0 {
+func UpdateDocument(document Document, updates UpdateOperation) (Document, error) {
+	if len(updates) == 0 {
 		return nil, errors.New("update document must have at least one element")
 	}
-	steps := []updateStep{}
-	for k, v := range operation {
-		step, err := parseOperationStep(k, v)
+	doc, err := convertDToDocument(document)
+	if err != nil {
+		return nil, err
+	}
+	convertedUpdates, err := convertUpdateParams(updates)
+	if err != nil {
+		return nil, errors.Wrap(err, "convert update operations to update params")
+	}
+	for _, update := range convertedUpdates {
+		// from ferret/handler/msg_update.go
+		_, err := common.HasSupportedUpdateModifiers("update", update.Update)
 		if err != nil {
 			return nil, err
 		}
-		steps = append(steps, step)
-	}
-	newDoc := document
-	var err error
-	for _, step := range steps {
-		newDoc, err = step.apply(newDoc)
-		if err != nil {
+
+		if _, err = common.UpdateDocument("update", doc, update.Update, true); err != nil {
+			return nil, errors.Wrap(err, "failed to update document")
+		}
+
+		if !doc.Has("_id") {
+			doc.Set("_id", types.NewObjectID())
+		}
+		if err = doc.ValidateData(); err != nil {
 			return nil, err
 		}
 	}
-	return newDoc, nil
+	result, err := convertDocumentToD(doc)
+	if err != nil {
+		return nil, err
+	}
+	return result, nil
 }
 
-func parseOperationStep(k string, v interface{}) (updateStep, error) {
-	switch k {
-	case "$set":
-		return newSet(v)
-	default:
-		return nil, errors.New("fuck")
+func convertDToDocument(d bson.D) (*types.Document, error) {
+	// from ferret/bson2/document_test.go
+	bytes, err := bson.Marshal(d)
+	if err != nil {
+		return nil, errors.Wrap(err, "marshall bson.D")
 	}
+
+	rawDoc, err := bson2.RawDocument(bytes).DecodeDeep()
+	if err != nil {
+		return nil, errors.Wrap(err, "decode raw bson bytes")
+	}
+
+	doc, err := rawDoc.Convert()
+	// todo: doc.validatedata?
+	return doc, errors.Wrap(err, "converting to parsed bson")
 }
 
-type setDoc = map[string]interface{}
-type setOperation struct {
-	doc setDoc
+func convertDocumentToD(document *types.Document) (bson.D, error) {
+	bson2Doc, err := bson2.ConvertDocument(document)
+	if err != nil {
+		return nil, errors.Wrap(err, "convert from types.Document to bson2.Document")
+	}
+	bytes, err := bson2Doc.Encode()
+	if err != nil {
+		return nil, errors.Wrap(err, "encode bson2.Document")
+	}
+	decoded := bson.D{}
+	err = bson.Unmarshal(bytes, &decoded)
+	if err != nil {
+		return nil, errors.Wrap(err, "decode internal bson2 back to bson.D")
+	}
+	return decoded, nil
 }
+func convertUpdateParams(updates UpdateOperation) ([]common.Update, error) {
+	commonUpdates := make([]common.Update, 0, len(updates))
 
-func newSet(doc interface{}) (*setOperation, error) {
-	asType, ok := doc.(setDoc)
-	if !ok {
-		return nil, errors.New("set operation invalid type")
-	}
-	return &setOperation{
-		doc: asType,
-	}, nil
-}
-func (o *setOperation) apply(current bson.D) (bson.D, error) {
-	// set does an upsert. This does the insert part
-	unvisitedNodes := map[string]bool{}
-	for v, _ := range o.doc {
-		unvisitedNodes[v] = true
-	}
-	newDoc := bson.D{}
-	for _, v := range current {
-		val, ok := o.doc[v.Key]
-		if ok {
-			delete(unvisitedNodes, v.Key)
-			newDoc = append(newDoc, bson.E{v.Key, val})
-		} else {
-			newDoc = append(newDoc, bson.E{v.Key, v.Value})
+	for _, update := range updates {
+		updateDocument, err := convertDToDocument(update)
+		if err != nil {
+			return nil, errors.Wrap(err, "convert bson.A update to internal update document")
 		}
+		commonUpdate := common.Update{
+			Filter:       updateDocument,
+			Update:       updateDocument,
+			Multi:        true,
+			Upsert:       true,
+			C:            updateDocument,
+			Collation:    updateDocument,
+			ArrayFilters: nil,
+			Hint:         "",
+		}
+		if err := common.ValidateUpdateOperators("update", commonUpdate.Update); err != nil {
+			return nil, err
+		}
+		commonUpdates = append(commonUpdates, commonUpdate)
 	}
-	for k, _ := range unvisitedNodes {
-		newDoc = append(newDoc, bson.E{k, o.doc[k]})
-	}
-	return newDoc, nil
-
+	return commonUpdates, nil
 }
