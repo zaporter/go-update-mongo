@@ -33,7 +33,7 @@ lint: tool-install
 
 .PHONY: test
 test:
-	go test -v -coverprofile=coverage.txt -covermode=atomic ./...
+	go test -v -coverprofile=coverage.txt -covermode=atomic "`(go list ./... | grep -v /internal/)`"
 
 bin/buf bin/protoc-gen-go bin/protoc-gen-grpc-gateway bin/protoc-gen-go-grpc:
 	GOBIN=$(shell pwd)/bin go install \
