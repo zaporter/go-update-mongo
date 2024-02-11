@@ -28,7 +28,7 @@ tool-install:
 .PHONY: lint
 lint: tool-install
 	go mod tidy
-	export pkgs="`go list -f '{{.Dir}}' ./... | grep -v /proto/`" && echo "$$pkgs" | xargs go vet -vettool=$(TOOL_BIN)/combined
+	export pkgs="`go list -f '{{.Dir}}' ./... | grep -v internal`" && echo "$$pkgs" | xargs go vet -vettool=$(TOOL_BIN)/combined
 	GOGC=50 $(TOOL_BIN)/golangci-lint run -v --fix --config=./golangci.yaml
 
 .PHONY: test

@@ -1,3 +1,4 @@
+// Package update is the main package for go-update-mongo
 package update
 
 import (
@@ -8,11 +9,7 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 )
 
-type Document = bson.D
-type UpdateOperation = []bson.D
-type upT = map[string]any
-
-func UpdateDocument(document Document, updates UpdateOperation) (Document, error) {
+func UpdateDocument(document, updates bson.D) (bson.D, error) {
 	if len(updates) == 0 {
 		return nil, errors.New("update document must have at least one element")
 	}
@@ -82,21 +79,24 @@ func convertDocumentToD(document *types.Document) (bson.D, error) {
 	}
 	return decoded, nil
 }
-func convertUpdateParams(updates UpdateOperation) ([]common.Update, error) {
-	commonUpdates := make([]common.Update, 0, len(updates))
 
-	for _, update := range updates {
+func convertUpdateParams(updates bson.D) ([]common.Update, error) {
+	commonUpdates := make([]common.Update, 0, len(updates))
+	// Hardcoded to a single update for now.
+	// Something is fishy between the ferret and mongo-go-driver types
+	// I think I am missing something
+	for _, update := range []bson.D{updates} {
 		updateDocument, err := convertDToDocument(update)
 		if err != nil {
 			return nil, errors.Wrap(err, "convert bson.A update to internal update document")
 		}
 		commonUpdate := common.Update{
-			Filter:       updateDocument,
+			Filter:       nil,
 			Update:       updateDocument,
-			Multi:        true,
+			Multi:        false,
 			Upsert:       true,
-			C:            updateDocument,
-			Collation:    updateDocument,
+			C:            nil,
+			Collation:    nil,
 			ArrayFilters: nil,
 			Hint:         "",
 		}
