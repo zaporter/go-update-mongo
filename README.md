@@ -24,7 +24,7 @@ The goal of this is to allow applications to perform complex operations on their
 
 Testing is performed by inserting an object in mongo, running `updateOne()` on it, and verifying that the document is identical to the document produced by `UpdateDocument`
 
-There are currently 144 passing and 61 skipped tests. 
+There are currently 205 tests and 61 are skipped.
 
 It is worth it to scan through `update/lib_test.go` to determine if your use case can be satisfied with the library at this point in time
 
