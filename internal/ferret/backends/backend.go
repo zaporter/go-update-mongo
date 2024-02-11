@@ -21,10 +21,10 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/clientconn/conninfo"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/observability"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/resource"
+	"github.com/zaporter/go-update-mongo/internal/ferret/clientconn/conninfo"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/observability"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/resource"
 )
 
 // Backend is a generic interface for all backends for accessing them.

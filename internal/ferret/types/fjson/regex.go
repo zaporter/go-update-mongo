@@ -17,8 +17,8 @@ package fjson
 import (
 	"encoding/json"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // regexType represents BSON Regular expression type.

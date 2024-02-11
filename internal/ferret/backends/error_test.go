@@ -23,7 +23,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/debugbuild"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/debugbuild"
 )
 
 func TestErrorNormal(t *testing.T) {

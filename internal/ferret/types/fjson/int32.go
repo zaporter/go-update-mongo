@@ -17,7 +17,7 @@ package fjson
 import (
 	"encoding/json"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // int32Type represents BSON 32-bit integer type.

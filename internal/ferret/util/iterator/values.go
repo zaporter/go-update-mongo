@@ -17,7 +17,7 @@ package iterator
 import (
 	"errors"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // ConsumeValues consumes all values from iterator until it is done.

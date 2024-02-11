@@ -34,16 +34,16 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/clientconn/conninfo"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/clientconn/connmetrics"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/handlererrors"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/proxy"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/observability"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/wire"
+	"github.com/zaporter/go-update-mongo/internal/ferret/clientconn/conninfo"
+	"github.com/zaporter/go-update-mongo/internal/ferret/clientconn/connmetrics"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/handlererrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/proxy"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/observability"
+	"github.com/zaporter/go-update-mongo/internal/ferret/wire"
 )
 
 // Mode represents FerretDB mode of operation.

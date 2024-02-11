@@ -15,8 +15,8 @@
 package common
 
 import (
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // SkipDocuments returns a subslice of given documents according to the given skip value.

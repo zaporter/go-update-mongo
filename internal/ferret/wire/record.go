@@ -22,7 +22,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // Record represents a single recorded wire protocol message, loaded from a .bin file.

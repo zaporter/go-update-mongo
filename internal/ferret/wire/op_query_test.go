@@ -17,9 +17,9 @@ package wire
 import (
 	"testing"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/testutil"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/testutil"
 )
 
 var queryTestCases = []testCase{{

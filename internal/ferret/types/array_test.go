@@ -21,7 +21,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
 )
 
 var scalarTypesArray = must.NotFail(NewArray(

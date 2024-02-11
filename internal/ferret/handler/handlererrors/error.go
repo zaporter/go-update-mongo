@@ -18,8 +18,8 @@ package handlererrors
 import (
 	"errors"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/wire"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/wire"
 )
 
 //go:generate ../../../bin/stringer -linecomment -type ErrorCode

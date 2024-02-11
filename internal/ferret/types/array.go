@@ -17,8 +17,8 @@ package types
 import (
 	"fmt"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/iterator"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/iterator"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
 )
 
 // Array represents BSON array: an ordered collection of BSON values, accessed by 0-based indexes.

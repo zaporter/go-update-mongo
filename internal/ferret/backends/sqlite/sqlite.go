@@ -35,9 +35,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends/sqlite/metadata"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/fsql"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends/sqlite/metadata"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/fsql"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // stats represents information about statistics of tables and indexes.

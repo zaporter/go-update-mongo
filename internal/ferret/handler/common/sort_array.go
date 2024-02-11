@@ -17,8 +17,8 @@ package common
 import (
 	"sort"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
 )
 
 // SortArray sorts the values of given array.

@@ -26,10 +26,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/testutil/testtb"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/wire"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/testutil/testtb"
+	"github.com/zaporter/go-update-mongo/internal/ferret/wire"
 )
 
 type testCase struct {

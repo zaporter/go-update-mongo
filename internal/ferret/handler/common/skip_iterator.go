@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/iterator"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/iterator"
 )
 
 // SkipIterator returns an iterator that skips a number of documents returned by the underlying iterator.

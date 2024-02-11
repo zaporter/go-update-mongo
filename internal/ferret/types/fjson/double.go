@@ -18,7 +18,7 @@ import (
 	"encoding/json"
 	"math"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // doubleType represents BSON 64-bit binary floating point type.

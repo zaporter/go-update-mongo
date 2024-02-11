@@ -22,8 +22,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/iterator"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/testutil/teststress"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/iterator"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/testutil/teststress"
 )
 
 // TestIterator checks that the iterator implementation is correct.

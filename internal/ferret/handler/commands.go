@@ -17,7 +17,7 @@ package handler
 import (
 	"context"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/wire"
+	"github.com/zaporter/go-update-mongo/internal/ferret/wire"
 )
 
 // command represents a handler for single command.

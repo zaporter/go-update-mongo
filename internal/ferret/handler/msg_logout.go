@@ -17,10 +17,10 @@ package handler
 import (
 	"context"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/clientconn/conninfo"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/wire"
+	"github.com/zaporter/go-update-mongo/internal/ferret/clientconn/conninfo"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/wire"
 )
 
 // MsgLogout implements `logout` command.

@@ -15,7 +15,7 @@
 // Package metadata provides access to databases and collections information.
 package metadata
 
-import "github.com/zaporter-work/go-update-mongo/internal/ferret/backends"
+import "github.com/zaporter/go-update-mongo/internal/ferret/backends"
 
 // Collection will probably have a method for getting column name / SQLite path expression for the given document field
 // once we implement field extraction.

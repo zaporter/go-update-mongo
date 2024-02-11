@@ -20,7 +20,7 @@ import (
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/observability"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/observability"
 )
 
 // InTransaction uses pool p and wraps the given function f in a transaction.

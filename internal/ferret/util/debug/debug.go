@@ -34,7 +34,7 @@ import (
 	"go.uber.org/zap"
 	"golang.org/x/exp/maps"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
 )
 
 // RunHandler runs debug handler.

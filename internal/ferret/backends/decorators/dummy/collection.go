@@ -17,7 +17,7 @@ package dummy
 import (
 	"context"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends"
 )
 
 // collection implements backends.Collection interface by delegating all methods to the wrapped database.

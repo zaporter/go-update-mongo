@@ -23,7 +23,7 @@ import (
 	"hash/crc32"
 	"io"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // MsgBody is a wire protocol message body.

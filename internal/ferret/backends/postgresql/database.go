@@ -19,9 +19,9 @@ import (
 	"context"
 	"slices"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends/postgresql/metadata"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends/postgresql/metadata"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // database implements backends.Database interface.

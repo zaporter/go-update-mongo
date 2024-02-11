@@ -25,16 +25,16 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"go.uber.org/zap"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends/decorators/oplog"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/clientconn/conninfo"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/clientconn/connmetrics"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/clientconn/cursor"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/iterator"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/state"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends/decorators/oplog"
+	"github.com/zaporter/go-update-mongo/internal/ferret/clientconn/conninfo"
+	"github.com/zaporter/go-update-mongo/internal/ferret/clientconn/connmetrics"
+	"github.com/zaporter/go-update-mongo/internal/ferret/clientconn/cursor"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/iterator"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/state"
 )
 
 // Parts of Prometheus metric names.

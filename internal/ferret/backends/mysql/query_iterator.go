@@ -20,15 +20,15 @@ import (
 	"slices"
 	"sync"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends/mysql/metadata"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/sjson"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/fsql"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/iterator"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/observability"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/resource"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends/mysql/metadata"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/sjson"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/fsql"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/iterator"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/observability"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/resource"
 )
 
 // queryIterator implements iterator.Interface to fetch documents from the database.

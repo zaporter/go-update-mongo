@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/resource"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/resource"
 )
 
 // NextFunc is a part of Interface for the Next method.

@@ -21,9 +21,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/clientconn/conninfo"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/testutil"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends"
+	"github.com/zaporter/go-update-mongo/internal/ferret/clientconn/conninfo"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/testutil"
 )
 
 func TestVersion(t *testing.T) {

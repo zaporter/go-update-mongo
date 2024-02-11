@@ -17,8 +17,8 @@
 package registry
 
 import (
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends/hana"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends/hana"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler"
 )
 
 // init registers "hana" handler for Hana when "ferretdb_hana" build tag is provided.

@@ -27,7 +27,7 @@ import (
 	otelsdktrace "go.opentelemetry.io/otel/sdk/trace"
 	otelsemconv "go.opentelemetry.io/otel/semconv/v1.21.0"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
 )
 
 // SetupOtel sets up OpenTelemetry exporter with fixed values.

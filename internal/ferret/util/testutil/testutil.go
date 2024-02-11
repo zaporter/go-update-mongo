@@ -23,8 +23,8 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/ctxutil"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/testutil/testtb"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/ctxutil"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/testutil/testtb"
 )
 
 // Ctx returns test context.

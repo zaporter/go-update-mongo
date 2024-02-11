@@ -18,10 +18,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends/sqlite/metadata"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/sjson"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends/sqlite/metadata"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/sjson"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // prepareInsertStatement returns a statement and arguments for inserting the given documents.

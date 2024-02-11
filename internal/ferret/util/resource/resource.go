@@ -23,7 +23,7 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/debugbuild"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/debugbuild"
 )
 
 // Token should be a field of a tracked object.

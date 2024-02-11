@@ -20,7 +20,7 @@ import (
 	"encoding/json"
 	"slices"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // Settings represents collection settings.

@@ -25,10 +25,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/handlererrors"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/iterator"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/handlererrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/iterator"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
 )
 
 // newAccumulatorFunc is a type for a function that creates an accumulation operator.

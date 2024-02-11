@@ -20,7 +20,7 @@ import (
 	"encoding/hex"
 	"strings"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // Dump makes a hex dump of byte array.

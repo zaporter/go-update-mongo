@@ -15,8 +15,8 @@
 package aggregations
 
 import (
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
 )
 
 // GetPushdownQuery gets pushdown query ($match and $sort) for aggregation.

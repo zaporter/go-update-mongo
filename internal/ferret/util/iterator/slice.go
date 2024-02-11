@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/resource"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/resource"
 )
 
 // ForSlice returns an iterator over a slice.

@@ -17,8 +17,8 @@
 package registry
 
 import (
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends/postgresql"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends/postgresql"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler"
 )
 
 // init registers "postgresql" handler.

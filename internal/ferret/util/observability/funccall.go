@@ -19,7 +19,7 @@ import (
 	"runtime"
 	"runtime/trace"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/resource"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/resource"
 )
 
 // funcCall tracks function calls.

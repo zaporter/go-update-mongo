@@ -23,8 +23,8 @@ import (
 	// Register HANA SQL driver.
 	"github.com/SAP/go-hdb/driver"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/fsql"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/fsql"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // Errors are wrapped with lazyerrors.Error,

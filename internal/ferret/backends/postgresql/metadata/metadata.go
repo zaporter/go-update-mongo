@@ -19,11 +19,11 @@ import (
 	"database/sql"
 	"database/sql/driver"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/sjson"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/sjson"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
 )
 
 const (

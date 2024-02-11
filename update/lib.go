@@ -3,9 +3,9 @@ package update
 
 import (
 	"github.com/pkg/errors"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/bson2"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/common"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/bson2"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/common"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
 	"go.mongodb.org/mongo-driver/bson"
 )
 

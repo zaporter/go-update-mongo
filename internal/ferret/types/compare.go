@@ -22,7 +22,7 @@ import (
 
 	"golang.org/x/exp/constraints"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
 )
 
 //go:generate ../../bin/stringer -linecomment -type CompareResult

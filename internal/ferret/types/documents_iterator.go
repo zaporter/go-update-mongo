@@ -14,7 +14,7 @@
 
 package types
 
-import "github.com/zaporter-work/go-update-mongo/internal/ferret/util/iterator"
+import "github.com/zaporter/go-update-mongo/internal/ferret/util/iterator"
 
 // DocumentsIterator represents an iterator over documents (slice, query results, etc).
 //

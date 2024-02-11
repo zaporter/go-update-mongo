@@ -24,12 +24,12 @@ import (
 	"github.com/SAP/go-hdb/driver"
 	"github.com/google/uuid"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/sjson"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/fsql"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/sjson"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/fsql"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
 )
 
 // collection implements backends.Collection interface by delegating all methods to the wrapped database.

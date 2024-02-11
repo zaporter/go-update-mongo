@@ -17,7 +17,7 @@ package fsql
 import (
 	"database/sql"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/resource"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/resource"
 )
 
 // Rows wraps [*database/sql.Rows] with resource tracking.

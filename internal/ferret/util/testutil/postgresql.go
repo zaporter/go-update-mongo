@@ -26,7 +26,7 @@ import (
 	"github.com/jackc/pgx/v5/tracelog"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/testutil/testtb"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/testutil/testtb"
 )
 
 // TestPostgreSQLURI returns PostgreSQL URI with test-specific database.

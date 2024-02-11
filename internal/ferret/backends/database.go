@@ -19,8 +19,8 @@ import (
 	"context"
 	"slices"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/observability"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/observability"
 )
 
 // Database is a generic interface for all backends for accessing databases.

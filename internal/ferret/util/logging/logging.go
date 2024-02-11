@@ -24,7 +24,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/debugbuild"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/debugbuild"
 )
 
 // logLevels maps zap log levels to slog levels.

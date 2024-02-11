@@ -22,10 +22,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/fsql"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/state"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/testutil"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/testutil/teststress"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/fsql"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/state"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/testutil"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/testutil/teststress"
 )
 
 // testCollection creates, tests, and drops a unique collection in the existing database.

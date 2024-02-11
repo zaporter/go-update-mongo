@@ -21,9 +21,9 @@ import (
 	"crypto/tls"
 	"net"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/tlsutil"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/wire"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/tlsutil"
+	"github.com/zaporter/go-update-mongo/internal/ferret/wire"
 )
 
 // Router "handles" messages by sending them to another wire protocol compatible service.

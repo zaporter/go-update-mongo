@@ -24,14 +24,14 @@ import (
 	"go.uber.org/zap"
 
 	"github.com/FerretDB/FerretDB/build/version"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/handlererrors"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/handlerparams"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/debugbuild"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/logging"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/wire"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/handlererrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/handlerparams"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/debugbuild"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/logging"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/wire"
 )
 
 // MsgGetLog implements `getLog` command.

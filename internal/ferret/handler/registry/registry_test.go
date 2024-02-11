@@ -107,7 +107,7 @@ func TestDeps(t *testing.T) {
 		t.Parallel()
 
 		diff := negTagPackages(t, "ferretdb_no_postgresql")
-		assert.Contains(t, diff, "github.com/zaporter-work/go-update-mongo/internal/ferret/backends/postgresql")
+		assert.Contains(t, diff, "github.com/zaporter/go-update-mongo/internal/ferret/backends/postgresql")
 		assert.Contains(t, diff, "github.com/jackc/pgx/v5")
 	})
 
@@ -115,7 +115,7 @@ func TestDeps(t *testing.T) {
 		t.Parallel()
 
 		diff := negTagPackages(t, "ferretdb_no_sqlite")
-		assert.Contains(t, diff, "github.com/zaporter-work/go-update-mongo/internal/ferret/backends/sqlite")
+		assert.Contains(t, diff, "github.com/zaporter/go-update-mongo/internal/ferret/backends/sqlite")
 		assert.Contains(t, diff, "modernc.org/sqlite")
 	})
 }

@@ -21,8 +21,8 @@ import (
 
 	"golang.org/x/exp/maps"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // unmarshalExplain unmarshalls the plan from EXPLAIN postgreSQL command.

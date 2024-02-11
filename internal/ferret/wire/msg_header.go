@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 //go:generate ../../bin/stringer -linecomment -type OpCode

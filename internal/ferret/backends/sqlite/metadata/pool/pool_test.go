@@ -25,9 +25,9 @@ import (
 	sqlite3 "modernc.org/sqlite"
 	sqlite3lib "modernc.org/sqlite/lib"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/state"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/testutil"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/testutil/teststress"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/state"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/testutil"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/testutil/teststress"
 )
 
 func TestCreateDrop(t *testing.T) {

@@ -20,7 +20,7 @@ import (
 	"encoding/binary"
 	"time"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // dateTimeType represents BSON UTC datetime type.

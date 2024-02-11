@@ -25,7 +25,7 @@ import (
 	"github.com/go-sql-driver/mysql"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/testutil/testtb"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/testutil/testtb"
 )
 
 // TestMySQLURI returns MySQL URI with test-specific database.

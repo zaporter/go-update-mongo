@@ -17,9 +17,9 @@ package common
 import (
 	"context"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/clientconn/conninfo"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/handlererrors"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/clientconn/conninfo"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/handlererrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
 )
 
 // CheckClientMetadata checks if the message does not contain client metadata after it was received already.

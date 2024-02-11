@@ -14,7 +14,7 @@
 
 package stages
 
-import "github.com/zaporter-work/go-update-mongo/internal/ferret/handler/common/aggregations"
+import "github.com/zaporter/go-update-mongo/internal/ferret/handler/common/aggregations"
 
 // Statistic represents a statistic that can be fetched from the DB.
 type Statistic int32

@@ -28,12 +28,12 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"go.uber.org/zap"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/clientconn/connmetrics"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/ctxutil"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/tlsutil"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/wire"
+	"github.com/zaporter/go-update-mongo/internal/ferret/clientconn/connmetrics"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/ctxutil"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/tlsutil"
+	"github.com/zaporter/go-update-mongo/internal/ferret/wire"
 )
 
 // Listener listens on one or multiple interfaces (TCP, Unix, TLS sockets)

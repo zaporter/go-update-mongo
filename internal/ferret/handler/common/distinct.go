@@ -20,12 +20,12 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/commonpath"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/handlererrors"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/handlerparams"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/iterator"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/commonpath"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/handlererrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/handlerparams"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/iterator"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // DistinctParams contains `distinct` command parameters supported by at least one handler.

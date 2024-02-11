@@ -22,7 +22,7 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/testutil/testtb"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/testutil/testtb"
 )
 
 // Stress runs function f in multiple goroutines.

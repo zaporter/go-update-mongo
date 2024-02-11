@@ -21,8 +21,8 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/observability"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/resource"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/observability"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/resource"
 )
 
 // Tx wraps [*database/sql.Tx] with resource tracking.

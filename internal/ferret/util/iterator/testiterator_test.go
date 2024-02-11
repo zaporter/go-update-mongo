@@ -17,8 +17,8 @@ package iterator_test // to avoid import cycle
 import (
 	"testing"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/iterator"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/iterator/testiterator"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/iterator"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/iterator/testiterator"
 )
 
 func TestTestIteratorForFunc(t *testing.T) {

@@ -21,7 +21,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
 )
 
 //go:generate ../../bin/stringer -linecomment -type PathErrorCode

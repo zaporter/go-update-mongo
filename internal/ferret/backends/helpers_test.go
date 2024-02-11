@@ -22,12 +22,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends/hana"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends/postgresql"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends/sqlite"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/state"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/testutil"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends/hana"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends/postgresql"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends/sqlite"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/state"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/testutil"
 )
 
 // testBackend contains information about backend under test.

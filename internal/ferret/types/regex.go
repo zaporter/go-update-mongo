@@ -19,7 +19,7 @@ import (
 	"regexp"
 	"regexp/syntax"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 var (

@@ -17,7 +17,7 @@ package bson
 import (
 	"bufio"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // CString represents BSON zero-terminated UTF-8 string type.

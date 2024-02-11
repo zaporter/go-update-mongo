@@ -21,9 +21,9 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/clientconn/connmetrics"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/state"
+	"github.com/zaporter/go-update-mongo/internal/ferret/clientconn/connmetrics"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/state"
 )
 
 // newHandlerFunc represents a function that constructs a new handler.

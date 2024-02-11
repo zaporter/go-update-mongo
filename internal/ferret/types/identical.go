@@ -19,7 +19,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/iterator"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/iterator"
 )
 
 // Identical returns true if a and b are the same type

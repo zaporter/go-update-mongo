@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	self "github.com/zaporter-work/go-update-mongo/update"
+	self "github.com/zaporter/go-update-mongo/update"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"

@@ -17,8 +17,8 @@ package handler
 import (
 	"context"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/handlererrors"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/wire"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/handlererrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/wire"
 )
 
 // MsgCollMod implements `collMod` command.

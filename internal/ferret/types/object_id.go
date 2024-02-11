@@ -20,8 +20,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/debugbuild"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/debugbuild"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
 )
 
 // ObjectID represents BSON type ObjectID.

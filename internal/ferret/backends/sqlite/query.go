@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/backends/sqlite/metadata"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/backends/sqlite/metadata"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
 )
 
 // prepareSelectClause returns SELECT clause for default column of provided table name.

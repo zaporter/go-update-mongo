@@ -17,8 +17,8 @@ package types
 import (
 	"sync/atomic"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/iterator"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/resource"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/iterator"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/resource"
 )
 
 // arrayIterator represents an iterator for an Array.

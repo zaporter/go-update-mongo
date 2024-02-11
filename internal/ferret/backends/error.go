@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"slices"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/debugbuild"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/debugbuild"
 )
 
 //go:generate ../../bin/stringer -linecomment -type ErrorCode

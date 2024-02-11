@@ -1,4 +1,4 @@
-module github.com/zaporter-work/go-update-mongo
+module github.com/zaporter/go-update-mongo
 
 go 1.21.4
 

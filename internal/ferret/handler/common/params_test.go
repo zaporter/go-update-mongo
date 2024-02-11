@@ -20,7 +20,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/handlerparams"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/handlerparams"
 )
 
 func TestMultiplyLongSafely(t *testing.T) {

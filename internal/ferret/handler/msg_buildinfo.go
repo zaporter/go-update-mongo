@@ -19,10 +19,10 @@ import (
 	"strconv"
 
 	"github.com/FerretDB/FerretDB/build/version"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/handler/common/aggregations/stages"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/wire"
+	"github.com/zaporter/go-update-mongo/internal/ferret/handler/common/aggregations/stages"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/wire"
 )
 
 // MsgBuildInfo implements `buildInfo` command.

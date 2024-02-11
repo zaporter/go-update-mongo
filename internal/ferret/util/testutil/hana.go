@@ -18,7 +18,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/testutil/testtb"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/testutil/testtb"
 )
 
 // TestHanaURI returns a HANA Database URL for testing.

@@ -22,8 +22,8 @@ import (
 
 	"golang.org/x/crypto/pbkdf2"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/types"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/lazyerrors"
+	"github.com/zaporter/go-update-mongo/internal/ferret/types"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/lazyerrors"
 )
 
 // plainAlgo is the only algorithm used for PLAIN authentication.

@@ -20,8 +20,8 @@ import (
 	"slices"
 	"strconv"
 
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/iterator"
-	"github.com/zaporter-work/go-update-mongo/internal/ferret/util/must"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/iterator"
+	"github.com/zaporter/go-update-mongo/internal/ferret/util/must"
 )
 
 // Common interface with bson.Document.

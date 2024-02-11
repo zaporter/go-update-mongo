@@ -14,7 +14,7 @@
 
 package fjson
 
-import "github.com/zaporter-work/go-update-mongo/internal/ferret/types"
+import "github.com/zaporter/go-update-mongo/internal/ferret/types"
 
 // nullType represents BSON Null type.
 type nullType types.NullType
