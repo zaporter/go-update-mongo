@@ -24,7 +24,7 @@ The goal of this is to allow applications to perform complex operations on their
 
 # Testing Methodology
 
-Testing is performed by inserting an object in mongo, running `updateOne()` on it, and verifying that the document is identical to the document produced by `UpdateDocument`
+`UpdateDocument` is tested against a locally running monogo 7.0 docker. The test connects to mongo, inserts the test object, runs `updateOne()` on it, and then ensures that it is exactly equal to the document produced by `UpdateDocument()` (ordering of keys and all)
 
 There are currently 205 tests and 61 are skipped.
 
